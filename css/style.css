@@ -1,0 +1,192 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #1c1c1c; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+.sidepanel header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 4.5rem;
+    padding: 0 1.25rem;
+}
+.sidepanel .closebtn:focus {
+    outline: none;
+}
+/* The sidepanel links */
+.sidepanel a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidepanel ul {
+    padding-left: 1.25rem;
+}
+.sidepanel ul li {
+    color: white;
+    font-size: 1.5rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+.sidepanel ul li span {
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+.sidepanel ul li select {
+    display: block;
+    font-size: 2rem;
+    width: 90%;
+    padding: .25rem .5rem;
+}
+
+/* Style the button that is used to open the sidepanel */
+
+body > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    color: white;
+    padding: .5rem 0;
+    text-align: center;
+}
+body > header .openbtn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 2rem;
+    line-height: 2rem;
+    background-color: transparent;
+    color: white;
+    padding: .5rem 1.25rem;
+    border: none;
+}
+body > header .openbtn:focus {
+    outline: none;
+}
+body > header #homeToDestLabel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+main .content {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-left: 5px;
+}
+main .content > * {
+    text-align: center;
+}
+
+.col, .col-2, .col-3 {
+    display: inline-block;
+    position: relative;
+    margin-left: -5px;
+}
+.col {
+    width: 33.33%;
+    height: 16.5%;
+}
+.col-2 {
+    width: calc(66.8% - 1px);
+    height: 14.5%;
+}
+.col-3 {
+    width: 100%;
+    height: 32%;
+}
+.result {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+}
+.result #resultValue {
+    font-size: 6rem;
+}
+.result #resultCurrency {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.col button, .col-2 button {
+    width: calc(100% - 10px);
+    height: calc(100% - 10%);
+    font-size: 2.5rem;
+    border: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    margin: 5px;
+}
+.col button:focus, .col-2 button:focus {
+    outline: none;
+}
+
+.dark {
+    background-color: #505050;
+    color: white;
+}
+.light {
+    background-color: #D4D4D2;
+    color: black;
+}
+.orange {
+    background-color: #FF9500;
+    color: white;
+}

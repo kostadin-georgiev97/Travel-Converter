@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Travel Converter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div id="settingsSidebar" class="sidepanel">
+        <header>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </header>
+        <ul>
+            <li>
+                <span>
+                    Home currency
+                </span>
+                <select id="homeCurrency">
+                </select>
+            </li>
+            <hr>
+            <li>
+                <span>
+                    Destination currency
+                </span>
+                <select id="destinationCurrency">
+                </select>
+            </li>
+            <hr>
+            <li>
+                <span>
+                    Bank fee
+                </span>
+                <select id="bankFee">
+                    <option value="0" selected>0%</option>
+                    <option value="2">2%</option>
+                    <option value="4">4%</option>
+                    <option value="6">6%</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+        <span id="homeToDestLabel">GBP > EUR</span>
+    </header>
+    <main>
+        <div class="content">
+            <div class="col-3">
+                <div class="result">
+                    <span id="resultValue">0</span>
+                    <span id="resultCurrency">GBP</span>
+                </div>
+            </div>
+
+            <div class="col">
+                <button class="dark" value="7">7</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="8">8</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="9">9</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="4">4</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="5">5</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="6">6</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="1">1</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="2">2</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="3">3</button>
+            </div>
+            <div class="col">
+                <button class="light" value="C">C</button>
+            </div>
+            <div class="col">
+                <button class="dark" value="0">0</button>
+            </div>
+            <div class="col">
+                <button class="orange" value="=">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("settingsSidebar").style.width = "75%";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("settingsSidebar").style.width = "0";
+        }
+    </script>
+    <script src="ConverterModel.js"></script>
+    <script src="ConverterView.js"></script>
+    <script src="ConverterController.js"></script>
+</body>
+</html>
